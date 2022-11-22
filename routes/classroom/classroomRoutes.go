@@ -7,10 +7,10 @@ import (
 
 func Register(app *fiber.App) {
 	class := app.Group("/class")
-	class.Get("/add",classroomController.AddClass)
-	class.Get("/assign",classroomController.AssignUser)
-	class.Get("/leave",classroomController.LeaveClass)
-	class.Get("/delete",classroomController.DeleteClass)
-	class.Get("/info",classroomController.ClassInfo)
+	class.Post("/add",classroomController.AddClass)
+	class.Post("/assign",classroomController.AssignUser)
+	class.Post("/leave",classroomController.LeaveClass)
+	class.Post("/delete",classroomController.DeleteClass)
+	class.Post("/info",classroomController.ClassInfo)
 	class.Get("/all",classroomController.AllClasses)
 }

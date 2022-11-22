@@ -1,13 +1,17 @@
 package userEntity
 
+import (
+	"go.mongodb.org/mongo-driver/bson/primitive"
+)
+
 type User struct {
-	ID      string   `json:"id" bson:"_id"`
-	Role    UserRole `json:"role"`
-	Mail    string   `json:"mail"`
-	Birth   string   `json:"birth"`
-	Name    string   `json:"name"`
-	Bio     string   `json:"bio"`
-	Classes []string `json:"classes"`
+	ID      string             `json:"id" bson:"_id"`
+	Role    UserRole           `json:"role"`
+	Mail    string             `json:"mail"`
+	Birth   primitive.DateTime `json:"birth" bson:"birth"`
+	Name    string             `json:"name"`
+	Bio     string             `json:"bio"`
+	Classes []string           `json:"classes"`
 }
 
 type UserEntity struct {

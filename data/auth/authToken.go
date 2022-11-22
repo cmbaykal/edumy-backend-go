@@ -1,6 +1,10 @@
 package authToken
 
+import (
+	"go.mongodb.org/mongo-driver/bson/primitive"
+)
+
 type AuthToken struct {
-	AuthToken  string `json:"token"`
-	ExpireTime string `json:"expireTime"`
+	AuthToken  string             `json:"token"`
+	ExpireTime primitive.DateTime `json:"expireTime" bson:"expireTime"`
 }
