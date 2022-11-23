@@ -47,3 +47,6 @@ func Connect() error {
 func GetInstance() MongoInstance {
 	return mg
 }
+
+
+// TODO: add getCollection method

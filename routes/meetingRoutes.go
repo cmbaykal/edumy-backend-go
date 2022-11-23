@@ -7,6 +7,6 @@ import (
 
 func RegisterMeetingRoutes(app *fiber.App) {
 	class := app.Group("/meeting")
-	class.Get("/schedule", controller.ScheduleMeeting)
-	class.Get("/user", controller.UserMeetings)
+	class.Post("/schedule", controller.ScheduleMeeting)
+	class.Post("/user", controller.UserMeetings)
 }

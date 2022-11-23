@@ -14,6 +14,13 @@ type User struct {
 	Classes []string           `json:"classes"`
 }
 
+type MeetingUser struct {
+	ID      string             `json:"id" bson:"_id"`
+	Mail    string             `json:"mail"`
+	Name    string             `json:"name"`
+	Bio     string             `json:"bio"`
+}
+
 type UserEntity struct {
 	User
 	Pass string `json:"pass"`
