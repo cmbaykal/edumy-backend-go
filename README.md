@@ -6,3 +6,5 @@
 - Authentication on Controller Methods
 - BaseResponse Struct
 - Database refactor for better usage
+- Request Status Handler
+- Multipart File Upload
