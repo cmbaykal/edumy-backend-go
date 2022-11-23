@@ -40,10 +40,10 @@ func Connect() error {
 		Db:     db,
 	}
 
-	fmt.Println("Successfully connected and pinged.")
+	fmt.Println("Successfully connected to the database.")
 	return nil
 }
 
-func GetInstance() MongoInstance{
+func GetInstance() MongoInstance {
 	return mg
 }
